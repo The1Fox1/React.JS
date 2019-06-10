@@ -1,0 +1,78 @@
+.Ulist {
+  margin-left: auto;
+}
+.draggable {
+  border-radius: 15%;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: italic;
+  background-color: inherit;
+  padding: 0 !important;
+}
+.navHead {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  padding-bottom: 5%;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+  background-color: aliceblue;
+  border-width: 1px;
+  border-color: #51c6ea;
+}
+.sortableHelper {
+  z-index: 111 !important; /*Important - If Draggable component dissapears during Drag. Increase Z-Index to bring it to front of the UI. As of 5/23/19  index 111 is the Smallest index that still allows Drag Components to be visible*/
+  overflow: hidden !important;
+  list-style-type: none;
+  font-size: 17px;
+  font-weight: 700;
+  border-color: lightseagreen !important;
+  background-color: white;
+}
+.navFoot {
+  max-width: 75%;
+  padding-top: 1%;
+}
+
+.dropdownB {
+  position: relative;
+  display: inline-block;
+}
+
+.drag-dropdown {
+  border-radius: 15%;
+  color: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: italic;
+  position: absolute;
+  background-color: inherit;
+  font-family: inherit; /*Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.draggable:hover,
+.drop:hover {
+  cursor: pointer;
+  border-color: lightseagreen !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 112;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
